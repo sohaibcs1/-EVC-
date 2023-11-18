@@ -1759,7 +1759,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                     with gr.Row():
                         dropbox = gr.File(label="Drop your audio here & hit the Reload button.")
                     with gr.Row():
-                        record_button=gr.Audio(source="microphone", label="OR Record audio.", type="filepath")
+                        record_button=gr.Audio(label="OR Record audio.", type="filepath")
                     with gr.Row():
                         input_audio0 = gr.Dropdown(
                             label="2.Choose your audio.",
