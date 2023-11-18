@@ -1785,7 +1785,7 @@ with gr.Blocks(theme=gr.themes.Base()) as app:
                         with gr.Accordion('Wav2Lip', open=False):
                             with gr.Row():
                                 size = gr.Radio(label='Resolution:',choices=['Half','Full'])
-                                face = gr.UploadButton("Upload A Character",type='file')
+                                face = gr.UploadButton("Upload A Character",type='filepath')
                                 faces = gr.Dropdown(label="OR Choose one:", choices=['None','Ben Shapiro','Andrew Tate'])
                             with gr.Row():
                                 preview = gr.Textbox(label="Status:",interactive=False)
